@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8" />
+    <title>DJMAX</title>
+</head>
+ 
+<body>
+    <table border="1">
+        <tr>
+            <th>曲名</th>
+            <th>PACK</th>
+            <th>カテゴリ</th>
+            <th>アーティスト</th>
+            <th>BPM</th>
+            <th>実装日</th>
+            <th>備考</th>
+        </tr>
+        {% for music in dj_list %}
+        <tr>
+            <td>{{ music.music_name }}</td>
+            <td>{{ music.pack }}</td>
+            <td>{{ music.category }}</td>
+            <td>{{ music.artist }}</td>
+            <td>{{ music.bpm }}</td>
+            <td>{{ music.implementation_date }}</td>
+            <td>{{ music.remarks }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+ 
+</html>
