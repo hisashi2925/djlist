@@ -19,7 +19,7 @@
         </tr>
         {% for music in dj_list %}
         <tr>
-            <td>{{ music.music_name }}</td>
+            <td><a href="{% url 'dj_detail' music.pk %}">{{ music.music_name }}</a></td>
             <td>{{ music.pack }}</td>
             <td>{{ music.category }}</td>
             <td>{{ music.artist }}</td>
